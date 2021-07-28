@@ -5,6 +5,13 @@
 docker network create hr-net
 ```
 
+## Instalar pgAdmin4 via docker
+```
+docker pull dpage/pgadmin4
+docker run -p 80:80 -e PGADMIN_DEFAULT_EMAIL=seu_email@mail.com -e PGADMIN_DEFAULT_PASSWORD=1234567 dpage/pgadmin4
+
+```
+
 ## Testando perfil dev com Postgresql no Docker
 ```
 docker pull postgres:12-alpine
